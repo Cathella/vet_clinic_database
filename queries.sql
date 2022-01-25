@@ -65,3 +65,30 @@ select * from visits where animal_id=7 and vet_id=1 and date_of_visit='19800101'
 delete from visits where animal_id=7 and vet_id=1 and date_of_visit='19800101' and id <> 25;
 --CHECK IF IT WORKS
 select * from visits where animal_id=7 and vet_id=1 and date_of_visit='19800101';
+
+--DELETE FOR ANIMAL_ID=8 AND VET_ID=1 AND DATE_OF_VISIT='19800101'
+---CHECK CURRENT INFO (24 rows)
+select * from visits where animal_id=8 and vet_id=1 and date_of_visit='19800101';
+select * from visits where animal_id=8 and vet_id=1 and date_of_visit='19800101' and id <> 29;
+--DELETE (23 rows))
+delete from visits where animal_id=8 and vet_id=1 and date_of_visit='19800101' and id <> 29;
+--CHECK IF IT WORKS
+select * from visits where animal_id=8 and vet_id=1 and date_of_visit='19800101';
+
+--DELETE FOR ANIMAL_ID=9 AND VET_ID=1 AND DATE_OF_VISIT='19800101'
+---CHECK CURRENT INFO (24 rows)
+select * from visits where animal_id=9 and vet_id=1 and date_of_visit='19800101';
+select * from visits where animal_id=9 and vet_id=1 and date_of_visit='19800101' and id <> 33;
+--DELETE (23 rows))
+delete from visits where animal_id=9 and vet_id=1 and date_of_visit='19800101' and id <> 33;
+--CHECK IF IT WORKS
+select * from visits where animal_id=9 and vet_id=1 and date_of_visit='19800101';
+
+--DELETE FOR ANIMAL_ID=10 AND VET_ID=1 AND DATE_OF_VISIT='19800101'
+---CHECK CURRENT INFO (24 rows)
+select * from visits where animal_id=10 and vet_id=1 and date_of_visit='19800101';
+select * from visits where animal_id=10 and vet_id=1 and date_of_visit='19800101' and id <> 37;
+--DELETE (23 rows))
+delete from visits where animal_id=10 and vet_id=1 and date_of_visit='19800101' and id <> 37;
+--CHECK IF IT WORKS
+select * from visits where animal_id=10 and vet_id=1 and date_of_visit='19800101';
