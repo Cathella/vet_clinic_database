@@ -45,3 +45,18 @@ CREATE TABLE visits(
   date_of_visit DATE,
   PRIMARY KEY(id)
 );
+--CHANGE TO TABLES
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+--CHANGES TO IMPROVE PERFORMANCE DB 
+---INDEX FOR TABLES
+----VISITS TABLE
+-----ANIMAL_ID
+create index index_for_animals_id ON visits(animal_id);
+-----VET_ID
+create index index_for_vet_id on visits(vet_id);
+cluster visits using index_for_vet_id;
+----OWNERS TABLE
+-----EMAIL
+create index index_for_owners_mail on owners(email);
